@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"/>
+
+<plist version="1.0">
+    <dict>
+        <key>SaveData</key>
+        <dict>
+            <key>CurrentLevel</key>
+            <integer>1</integer>
+            <key>EnableAudio</key>
+            <true/>
+            <key>NeedPlayHelp</key>
+            <true/>
+            <key>CurrentMoney</key>
+            <integer>8888</integer>
+            <key>CurrentArea</key>
+            <integer>1</integer>
+            <key>MaxShowLevel</key>
+            <integer>1</integer>
+            <key>FinishedEgyptStory</key>
+            <false/>
+            <key>RatedMe</key>
+            <false/>
+            <key>Payment</key>
+            <true/>
+            <key>UnlockRoleList</key>
+            <string>0,1</string>
+        </dict>
+    </dict>
+</plist>

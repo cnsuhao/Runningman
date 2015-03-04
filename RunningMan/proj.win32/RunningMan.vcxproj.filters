@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Player">
+      <UniqueIdentifier>{1cd7b9d0-b4e0-459a-9868-7ae225ef8f28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Skill">
+      <UniqueIdentifier>{776358c8-1985-4f1f-92fb-8d48240124c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Sound">
+      <UniqueIdentifier>{e86511fa-fced-4bda-b072-508dcc1d402c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Misc">
+      <UniqueIdentifier>{a2e87904-9fa3-4307-b3ff-9ff1698c3b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item">
+      <UniqueIdentifier>{531ef2c3-8a31-4d01-9bd2-1f60189989e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Projectile">
+      <UniqueIdentifier>{26096fc6-6283-47b9-a26b-8af8430840b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Manager">
+      <UniqueIdentifier>{fa28c2ba-d6f4-4852-b8a5-ed7f807e8edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UI">
+      <UniqueIdentifier>{fc6d44df-85a9-4a38-84b4-dd186c779402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\BaseUI">
+      <UniqueIdentifier>{05fb055a-58d0-49e8-9855-0200b005b6cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Common">
+      <UniqueIdentifier>{d92344bb-996b-4db1-9ca2-3a064bcd76c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Trap">
+      <UniqueIdentifier>{42a78ee3-ad29-4d5c-aeda-a5b0a62380a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scene">
+      <UniqueIdentifier>{6c681f0b-0d0c-4961-b662-7bc39f4ce5df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Effect">
+      <UniqueIdentifier>{1b0dd7b2-0b36-4190-946b-6c89f06da5bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Level">
+      <UniqueIdentifier>{0a497d18-ea6d-4201-8c0f-6e0f9cf43dba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BaseUI\ProgressBar.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ResDef.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\TitleUI.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\LogoUI.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\CommonMethod.cpp">
+      <Filter>Classes\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\GameScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\PlayerStatusMgr.cpp">
+      <Filter>Classes\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player\Player.cpp">
+      <Filter>Classes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player\PlayerStatus.cpp">
+      <Filter>Classes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player\Player_Protagonist.cpp">
+      <Filter>Classes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Skill\SkillManager.cpp">
+      <Filter>Classes\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Skill\SkillBase.cpp">
+      <Filter>Classes\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Skill\SkillAnger.cpp">
+      <Filter>Classes\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Skill\SkillBanana.cpp">
+      <Filter>Classes\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Skill\SkillBoard.cpp">
+      <Filter>Classes\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\Track.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player\PlayerManager.cpp">
+      <Filter>Classes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Trap\TrapManager.cpp">
+      <Filter>Classes\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Trap\TrapBase.cpp">
+      <Filter>Classes\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player\Player_MatchMan.cpp">
+      <Filter>Classes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player\Player_Mummy.cpp">
+      <Filter>Classes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player\Player_Pharaoh.cpp">
+      <Filter>Classes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player\AI_Player.cpp">
+      <Filter>Classes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\GameUILayer.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sound\SoundManager.cpp">
+      <Filter>Classes\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Effect\EffectManager.cpp">
+      <Filter>Classes\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Effect\ParticleEffect.cpp">
+      <Filter>Classes\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Effect\Effects.cpp">
+      <Filter>Classes\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Effect\GameEffect.cpp">
+      <Filter>Classes\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\WorldMapScene.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\HelpUI.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Level\GameLevel.cpp">
+      <Filter>Classes\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Level\Area.cpp">
+      <Filter>Classes\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Level\LevelManager.cpp">
+      <Filter>Classes\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Item\ItemBase.cpp">
+      <Filter>Classes\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Item\ItemManager.cpp">
+      <Filter>Classes\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\StoryEndUI.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Manager\GameStatusManager.cpp">
+      <Filter>Classes\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Projectile\ProjectileBase.cpp">
+      <Filter>Classes\Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Trap\TrapBanana.cpp">
+      <Filter>Classes\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Trap\TrapBoard.cpp">
+      <Filter>Classes\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Trap\TrapCloud.cpp">
+      <Filter>Classes\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Trap\TrapCoffin.cpp">
+      <Filter>Classes\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Trap\TrapRedCactus.cpp">
+      <Filter>Classes\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Trap\TrapStorm.cpp">
+      <Filter>Classes\Trap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BaseUI\ProgressBar.h">
+      <Filter>Classes\BaseUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ResDef.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\TitleUI.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\LogoUI.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\CommonMethod.h">
+      <Filter>Classes\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameResources.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\GameScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\PlayerStatusMgr.h">
+      <Filter>Classes\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player\Player.h">
+      <Filter>Classes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player\PlayerStatus.h">
+      <Filter>Classes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player\Player_Protagonist.h">
+      <Filter>Classes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Skill\SkillManager.h">
+      <Filter>Classes\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Skill\SkillBase.h">
+      <Filter>Classes\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Skill\SkillAnger.h">
+      <Filter>Classes\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Skill\SkillBanana.h">
+      <Filter>Classes\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Skill\SkillBoard.h">
+      <Filter>Classes\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\Track.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player\PlayerManager.h">
+      <Filter>Classes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Trap\TrapManager.h">
+      <Filter>Classes\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Trap\TrapBase.h">
+      <Filter>Classes\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player\Player_MatchMan.h">
+      <Filter>Classes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player\Player_Mummy.h">
+      <Filter>Classes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player\Player_Pharaoh.h">
+      <Filter>Classes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player\AI_Player.h">
+      <Filter>Classes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\GameUILayer.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sound\SoundManager.h">
+      <Filter>Classes\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Effect\EffectManager.h">
+      <Filter>Classes\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Effect\ParticleEffect.h">
+      <Filter>Classes\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Effect\Effects.h">
+      <Filter>Classes\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Effect\GameEffect.h">
+      <Filter>Classes\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\WorldMapScene.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\HelpUI.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Level\GameLevel.h">
+      <Filter>Classes\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Level\Area.h">
+      <Filter>Classes\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Level\LevelManager.h">
+      <Filter>Classes\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Item\ItemBase.h">
+      <Filter>Classes\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Item\ItemManager.h">
+      <Filter>Classes\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\StoryEndUI.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Manager\GameStatusManager.h">
+      <Filter>Classes\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Projectile\ProjectileBase.h">
+      <Filter>Classes\Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Trap\TrapBanana.h">
+      <Filter>Classes\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Trap\TrapBoard.h">
+      <Filter>Classes\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Trap\TrapCloud.h">
+      <Filter>Classes\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Trap\TrapCoffin.h">
+      <Filter>Classes\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Trap\TrapRedCactus.h">
+      <Filter>Classes\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Trap\TrapStorm.h">
+      <Filter>Classes\Trap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

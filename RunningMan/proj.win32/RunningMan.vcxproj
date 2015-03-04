@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\BaseUI\ProgressBar.cpp" />
+    <ClCompile Include="..\Classes\Common\CommonMethod.cpp" />
+    <ClCompile Include="..\Classes\Effect\GameEffect.cpp" />
+    <ClCompile Include="..\Classes\Effect\EffectManager.cpp" />
+    <ClCompile Include="..\Classes\Effect\Effects.cpp" />
+    <ClCompile Include="..\Classes\Effect\ParticleEffect.cpp" />
+    <ClCompile Include="..\Classes\Item\ItemBase.cpp" />
+    <ClCompile Include="..\Classes\Item\ItemManager.cpp" />
+    <ClCompile Include="..\Classes\Level\Area.cpp" />
+    <ClCompile Include="..\Classes\Level\GameLevel.cpp" />
+    <ClCompile Include="..\Classes\Level\LevelManager.cpp" />
+    <ClCompile Include="..\Classes\Manager\GameStatusManager.cpp" />
+    <ClCompile Include="..\Classes\Manager\PlayerStatusMgr.cpp" />
+    <ClCompile Include="..\Classes\Player\AI_Player.cpp" />
+    <ClCompile Include="..\Classes\Player\Player.cpp" />
+    <ClCompile Include="..\Classes\Player\PlayerManager.cpp" />
+    <ClCompile Include="..\Classes\Player\PlayerStatus.cpp" />
+    <ClCompile Include="..\Classes\Player\Player_MatchMan.cpp" />
+    <ClCompile Include="..\Classes\Player\Player_Mummy.cpp" />
+    <ClCompile Include="..\Classes\Player\Player_Pharaoh.cpp" />
+    <ClCompile Include="..\Classes\Player\Player_Protagonist.cpp" />
+    <ClCompile Include="..\Classes\Projectile\ProjectileBase.cpp" />
+    <ClCompile Include="..\Classes\ResDef.cpp" />
+    <ClCompile Include="..\Classes\Scene\WorldMapScene.cpp" />
+    <ClCompile Include="..\Classes\Scene\GameScene.cpp" />
+    <ClCompile Include="..\Classes\Scene\Track.cpp" />
+    <ClCompile Include="..\Classes\Skill\SkillAnger.cpp" />
+    <ClCompile Include="..\Classes\Skill\SkillBanana.cpp" />
+    <ClCompile Include="..\Classes\Skill\SkillBase.cpp" />
+    <ClCompile Include="..\Classes\Skill\SkillBoard.cpp" />
+    <ClCompile Include="..\Classes\Skill\SkillManager.cpp" />
+    <ClCompile Include="..\Classes\Sound\SoundManager.cpp" />
+    <ClCompile Include="..\Classes\Trap\TrapBanana.cpp" />
+    <ClCompile Include="..\Classes\Trap\TrapBase.cpp" />
+    <ClCompile Include="..\Classes\Trap\TrapBoard.cpp" />
+    <ClCompile Include="..\Classes\Trap\TrapCloud.cpp" />
+    <ClCompile Include="..\Classes\Trap\TrapCoffin.cpp" />
+    <ClCompile Include="..\Classes\Trap\TrapManager.cpp" />
+    <ClCompile Include="..\Classes\Trap\TrapRedCactus.cpp" />
+    <ClCompile Include="..\Classes\Trap\TrapStorm.cpp" />
+    <ClCompile Include="..\Classes\UI\GameUILayer.cpp" />
+    <ClCompile Include="..\Classes\UI\HelpUI.cpp" />
+    <ClCompile Include="..\Classes\UI\LogoUI.cpp" />
+    <ClCompile Include="..\Classes\UI\StoryEndUI.cpp" />
+    <ClCompile Include="..\Classes\UI\TitleUI.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\BaseUI\ProgressBar.h" />
+    <ClInclude Include="..\Classes\Common\CommonMethod.h" />
+    <ClInclude Include="..\Classes\Effect\GameEffect.h" />
+    <ClInclude Include="..\Classes\Effect\EffectManager.h" />
+    <ClInclude Include="..\Classes\Effect\Effects.h" />
+    <ClInclude Include="..\Classes\Effect\ParticleEffect.h" />
+    <ClInclude Include="..\Classes\GameResources.h" />
+    <ClInclude Include="..\Classes\Item\ItemBase.h" />
+    <ClInclude Include="..\Classes\Item\ItemManager.h" />
+    <ClInclude Include="..\Classes\Level\Area.h" />
+    <ClInclude Include="..\Classes\Level\GameLevel.h" />
+    <ClInclude Include="..\Classes\Level\LevelManager.h" />
+    <ClInclude Include="..\Classes\Manager\GameStatusManager.h" />
+    <ClInclude Include="..\Classes\Manager\PlayerStatusMgr.h" />
+    <ClInclude Include="..\Classes\Player\AI_Player.h" />
+    <ClInclude Include="..\Classes\Player\Player.h" />
+    <ClInclude Include="..\Classes\Player\PlayerManager.h" />
+    <ClInclude Include="..\Classes\Player\PlayerStatus.h" />
+    <ClInclude Include="..\Classes\Player\Player_MatchMan.h" />
+    <ClInclude Include="..\Classes\Player\Player_Mummy.h" />
+    <ClInclude Include="..\Classes\Player\Player_Pharaoh.h" />
+    <ClInclude Include="..\Classes\Player\Player_Protagonist.h" />
+    <ClInclude Include="..\Classes\Projectile\ProjectileBase.h" />
+    <ClInclude Include="..\Classes\ResDef.h" />
+    <ClInclude Include="..\Classes\Scene\WorldMapScene.h" />
+    <ClInclude Include="..\Classes\Scene\GameScene.h" />
+    <ClInclude Include="..\Classes\Scene\Track.h" />
+    <ClInclude Include="..\Classes\Skill\SkillAnger.h" />
+    <ClInclude Include="..\Classes\Skill\SkillBanana.h" />
+    <ClInclude Include="..\Classes\Skill\SkillBase.h" />
+    <ClInclude Include="..\Classes\Skill\SkillBoard.h" />
+    <ClInclude Include="..\Classes\Skill\SkillManager.h" />
+    <ClInclude Include="..\Classes\Sound\SoundManager.h" />
+    <ClInclude Include="..\Classes\Trap\TrapBanana.h" />
+    <ClInclude Include="..\Classes\Trap\TrapBase.h" />
+    <ClInclude Include="..\Classes\Trap\TrapBoard.h" />
+    <ClInclude Include="..\Classes\Trap\TrapCloud.h" />
+    <ClInclude Include="..\Classes\Trap\TrapCoffin.h" />
+    <ClInclude Include="..\Classes\Trap\TrapManager.h" />
+    <ClInclude Include="..\Classes\Trap\TrapRedCactus.h" />
+    <ClInclude Include="..\Classes\Trap\TrapStorm.h" />
+    <ClInclude Include="..\Classes\UI\GameUILayer.h" />
+    <ClInclude Include="..\Classes\UI\HelpUI.h" />
+    <ClInclude Include="..\Classes\UI\LogoUI.h" />
+    <ClInclude Include="..\Classes\UI\StoryEndUI.h" />
+    <ClInclude Include="..\Classes\UI\TitleUI.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2d\cocos\2d\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\audio\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\chipmunk\proj.win32\chipmunk.vcxproj">
+      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
