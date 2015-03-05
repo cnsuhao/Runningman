@@ -31,7 +31,7 @@ TrapManager::~TrapManager(void)
 
 TrapBase* TrapManager::CreateTrap(int index, TrapType type)
 {
-	if (index > m_TrapList.size() || m_TrapList.at(index) != nullptr)
+	if ( m_TrapList.at(index) != nullptr)
 	{
 		return nullptr;
 	}

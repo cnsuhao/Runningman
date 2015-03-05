@@ -9,7 +9,7 @@ enum ProjectileType;
 
 class ProjectileBase;
 
-class Track : public cocos2d::Sprite
+class Track : public cocos2d::Layer
 {
 private:
 	static const int NumTrapPoint;

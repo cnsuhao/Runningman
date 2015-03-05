@@ -138,7 +138,20 @@ int Track::numActiveTrap()
 
 void Track::delTrap(float angle)
 {
+	if (angle < 0.0f)
+	{
+		angle = angle + 360.0f;
+	}
+	int index = (int)(angle * 100.0f / 360.0f);
 
+	auto pTrap = TrapManager::Instance()->GetTrap(index);
+
+	if (pTrap != nullptr)
+	{
+		pTrap->removeFromParentAndCleanup(true);
+
+		TrapManager::Instance()->delTrap(index);
+	}
 }
 
 //item
