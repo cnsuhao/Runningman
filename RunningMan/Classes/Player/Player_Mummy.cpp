@@ -12,7 +12,7 @@
 Player_Mummy::Player_Mummy(int id) :
 		Player(id)
 {
-	m_RoleType = "Role_Protagonist";
+	m_RoleType = "Role_Mummy";
 	//Skill
 	m_PlayerSkill_Run = SkillManager::Instance()->CreateSkill(SkillType::SKILL_USECOFFIN, this);
 
@@ -193,6 +193,7 @@ void Player_Mummy::useSkill()
 					}
 				}
 			}
+				
 		return;
 
 		}

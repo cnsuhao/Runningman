@@ -111,7 +111,7 @@ void Track::CreateTrap(float angle, TrapType type)
 		index = 0;
 	}
 
-	TrapBase* pTrap = TrapManager::Instance()->CreateTrap(index,/*type*/TrapType::TRAP_STORM);
+	TrapBase* pTrap = TrapManager::Instance()->CreateTrap(index,type/*TrapType::TRAP_STORM*/);
 	if (pTrap != nullptr)
 	{
 		cocos2d::Vec2 anchoPos = cocos2d::Vec2(m_TrackCenter.x, m_TrackCenter.y - m_radius);

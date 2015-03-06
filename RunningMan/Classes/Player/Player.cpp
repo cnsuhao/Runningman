@@ -810,7 +810,7 @@ bool Player::catchTrap(TrapType pTrapType)
 	}
 
 	//不无敌，处理是否中了陷阱
-	if (pTrapType == TrapType::TRAP_BANANA || TrapType::TRAP_REDCACTUS)
+	if (pTrapType == TrapType::TRAP_BANANA || pTrapType == TrapType::TRAP_REDCACTUS)
 	{
 		//if (m_RoleType == "Role_Protagonist" && typestr == "Trap_Banana")
 		//{
