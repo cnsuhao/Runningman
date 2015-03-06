@@ -52,13 +52,13 @@ bool WorldMapScene::init()
 	cocos2d::MenuItemSprite* button_Back = cocos2d::MenuItemSprite::create(
 		spr_Back_normal,
 		spr_Back_hover,
-		this,
+		nullptr,
 		CC_CALLBACK_1(WorldMapScene::callback_OnPressBack, this)
 		);
 	cocos2d::MenuItemSprite* button_Start = cocos2d::MenuItemSprite::create(
 		spr_Start_normal,
 		spr_Start_hover,
-		this,
+		nullptr,
 		CC_CALLBACK_1(WorldMapScene::callback_OnPressStart, this)
 		);
 

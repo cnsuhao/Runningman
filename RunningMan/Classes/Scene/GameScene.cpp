@@ -706,3 +706,21 @@ void GameScene::QuitGame(Ref* pSender)
 
 	Director::getInstance()->replaceScene(LogoUI::createScene());   
 }
+
+GameLevel* GameScene::GetCurrentLevelData()
+{
+	int curscene = ResDef::getInstance()->g_ConfigStruct.CurrentArea - 1;
+	int curlevel = ResDef::getInstance()->g_ConfigStruct.CurrentLevel - 1;
+	GameLevel* ldata = nullptr;
+	if (GameScene::g_GameMode == RunGameMode::MODE_STORY)
+	{
+		ldata = LevelManager::Instance()->m_Areas[curscene]->m_GameLevels[curlevel];
+	}
+	else if (GameScene::g_GameMode == RunGameMode::MODE_PVP ||
+		GameScene::g_GameMode == RunGameMode::MODE_PVC)
+	{
+		ldata = LevelManager::Instance()->VsAreaData->m_GameLevels[0];
+	}
+
+	return ldata;
+}

@@ -1,7 +1,7 @@
-﻿生成启动时间为 2015/3/4 21:42:17。
-     1>项目“E:\Runningman\RunningMan\cocos2d\cocos\2d\cocos2d.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2015/3/6 10:21:06。
+     1>项目“H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\cocos2d.vcxproj”在节点 4 上(Build 个目标)。
      1>ClCompile:
-         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include" /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\sqlite3\include /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\unzip /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\edtaa3func /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\tinyxml2 /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\png\include\win32 /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\jpeg\include\win32 /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\tiff\include\win32 /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\webp\include\win32 /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\freetype2\include\win32 /I"E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\icon\include" /I"E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\zlib\include" /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\chipmunk\include\chipmunk /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\xxhash /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\ConvertUTF /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\cocos /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\cocos\platform\win32 /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\cocos\platform\desktop /IE:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /Z7 /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _LIB /D COCOS2DXWIN32_EXPORTS /D GL_GLEXT_PROTOTYPES /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\..\external\ConvertUTF\ConvertUTF.c ..\..\external\ConvertUTF\ConvertUTFWrapper.cpp ..\..\external\edtaa3func\edtaa3func.cpp ..\..\external\tinyxml2\tinyxml2.cpp ..\..\external\unzip\ioapi.cpp ..\..\external\unzip\unzip.cpp ..\..\external\xxhash\xxhash.c ..\3d\CCAnimate3D.cpp ..\3d\CCAnimation3D.cpp ..\3d\CCBundle3D.cpp ..\3d\CCBundleReader.cpp ..\3d\CCMesh.cpp ..\3d\CCMeshSkin.cpp ..\3d\CCObjLoader.cpp ..\3d\CCSprite3D.cpp ..\3d\CCSprite3DMaterial.cpp ..\base\atitc.cpp ..\base\base64.cpp ..\base\CCAutoreleasePool.cpp ..\base\ccCArray.cpp ..\base\CCConfiguration.cpp ..\base\CCConsole.cpp ..\base\CCData.cpp ..\base\CCDataVisitor.cpp ..\base\CCDirector.cpp ..\base\CCEvent.cpp ..\base\CCEventAcceleration.cpp ..\base\CCEventCustom.cpp ..\base\CCEventDispatcher.cpp ..\base\CCEventFocus.cpp ..\base\CCEventKeyboard.cpp ..\base\CCEventListener.cpp ..\base\CCEventListenerAcceleration.cpp ..\base\CCEventListenerCustom.cpp ..\base\CCEventListenerFocus.cpp ..\base\CCEventListenerKeyboard.cpp ..\base\CCEventListenerMouse.cpp ..\base\CCEventListenerTouch.cpp ..\base\CCEventMouse.cpp ..\base\CCEventTouch.cpp ..\base\ccFPSImages.c ..\base\CCIMEDispatcher.cpp ..\base\CCNS.cpp ..\base\CCProfiling.cpp ..\base\CCRef.cpp ..\base\CCScheduler.cpp ..\base\CCScriptSupport.cpp ..\base\CCTouch.cpp ..\base\ccTypes.cpp ..\base\CCUserDefault.cpp ..\base\ccUTF8.cpp ..\base\ccUtils.cpp ..\base\CCValue.cpp ..\base\etc1.cpp ..\base\ObjectFactory.cpp ..\base\s3tc.cpp ..\base\TGAlib.cpp ..\base\ZipUtils.cpp ..\cocos2d.cpp ..\deprecated\CCArray.cpp ..\deprecated\CCDeprecated.cpp ..\deprecated\CCDictionary.cpp ..\deprecated\CCNotificationCenter.cpp ..\deprecated\CCSet.cpp ..\deprecated\CCString.cpp ..\math\CCAffineTransform.cpp ..\math\CCGeometry.cpp ..\math\CCVertex.cpp ..\math\Mat4.cpp ..\math\MathUtil.cpp ..\math\Quaternion.cpp ..\math\TransformUtils.cpp ..\math\Vec2.cpp ..\math\Vec3.cpp ..\math\Vec4.cpp ..\physics\CCPhysicsBody.cpp ..\physics\CCPhysicsContact.cpp ..\physics\CCPhysicsJoint.cpp ..\physics\CCPhysicsShape.cpp ..\physics\CCPhysicsWorld.cpp ..\physics\chipmunk\CCPhysicsBodyInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsContactInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsJointInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsShapeInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsWorldInfo_chipmunk.cpp ..\platform\CCFileUtils.cpp ..\platform\CCGLViewProtocol.cpp ..\platform\CCImage.cpp ..\platform\CCSAXParser.cpp ..\platform\CCThread.cpp ..\platform\desktop\CCGLView.cpp ..\platform\win32\CCApplication.cpp ..\platform\win32\CCCommon.cpp ..\platform\win32\CCDevice.cpp ..\platform\win32\CCFileUtilsWin32.cpp ..\platform\win32\CCStdC.cpp ..\renderer\CCBatchCommand.cpp ..\renderer\CCCustomCommand.cpp ..\renderer\CCGLProgram.cpp ..\renderer\CCGLProgramCache.cpp ..\renderer\CCGLProgramState.cpp ..\renderer\CCGLProgramStateCache.cpp ..\renderer\ccGLStateCache.cpp ..\renderer\CCGroupCommand.cpp ..\renderer\CCMeshCommand.cpp ..\renderer\CCQuadCommand.cpp ..\renderer\CCRenderCommand.cpp ..\renderer\CCRenderer.cpp ..\renderer\ccShaders.cpp ..\renderer\CCTexture2D.cpp ..\renderer\CCTextureAtlas.cpp ..\renderer\CCTextureCache.cpp CCAction.cpp CCActionCamera.cpp CCActionCatmullRom.cpp CCActionEase.cpp CCActionGrid.cpp CCActionGrid3D.cpp CCActionInstant.cpp CCActionInterval.cpp CCActionManager.cpp CCActionPageTurn3D.cpp CCActionProgressTimer.cpp CCActionTiledGrid.cpp CCActionTween.cpp CCAnimation.cpp CCAnimationCache.cpp CCAtlasNode.cpp CCClippingNode.cpp CCComponent.cpp CCComponentContainer.cpp CCDrawingPrimitives.cpp CCDrawNode.cpp CCFastTMXLayer.cpp CCFastTMXTiledMap.cpp CCFont.cpp CCFontAtlas.cpp CCFontAtlasCache.cpp CCFontCharMap.cpp CCFontFNT.cpp CCFontFreeType.cpp CCGLBufferedNode.cpp CCGrabber.cpp CCGrid.cpp CCLabel.cpp CCLabelAtlas.cpp CCLabelBMFont.cpp CCLabelTextFormatter.cpp CCLabelTTF.cpp CCLayer.cpp CCMenu.cpp CCMenuItem.cpp CCMotionStreak.cpp CCNode.cpp CCNodeGrid.cpp CCParallaxNode.cpp CCParticleBatchNode.cpp CCParticleExamples.cpp CCParticleSystem.cpp CCParticleSystemQuad.cpp CCProgressTimer.cpp CCRenderTexture.cpp CCScene.cpp CCSprite.cpp CCSpriteBatchNode.cpp CCSpriteFrame.cpp CCSpriteFrameCache.cpp CCTextFieldTTF.cpp CCTileMapAtlas.cpp CCTMXLayer.cpp CCTMXObjectGroup.cpp CCTMXTiledMap.cpp CCTMXXMLParser.cpp CCTransition.cpp CCTransitionPageTurn.cpp CCTransitionProgress.cpp CCTweenFunction.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include" /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\sqlite3\include /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\unzip /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\edtaa3func /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\tinyxml2 /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\png\include\win32 /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\jpeg\include\win32 /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\tiff\include\win32 /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\webp\include\win32 /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\freetype2\include\win32 /I"H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\icon\include" /I"H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\zlib\include" /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\chipmunk\include\chipmunk /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\xxhash /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\ConvertUTF /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\cocos /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\cocos\platform\win32 /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\cocos\platform\desktop /IH:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /Z7 /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _LIB /D COCOS2DXWIN32_EXPORTS /D GL_GLEXT_PROTOTYPES /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\..\external\ConvertUTF\ConvertUTF.c ..\..\external\ConvertUTF\ConvertUTFWrapper.cpp ..\..\external\edtaa3func\edtaa3func.cpp ..\..\external\tinyxml2\tinyxml2.cpp ..\..\external\unzip\ioapi.cpp ..\..\external\unzip\unzip.cpp ..\..\external\xxhash\xxhash.c ..\3d\CCAnimate3D.cpp ..\3d\CCAnimation3D.cpp ..\3d\CCBundle3D.cpp ..\3d\CCBundleReader.cpp ..\3d\CCMesh.cpp ..\3d\CCMeshSkin.cpp ..\3d\CCObjLoader.cpp ..\3d\CCSprite3D.cpp ..\3d\CCSprite3DMaterial.cpp ..\base\atitc.cpp ..\base\base64.cpp ..\base\CCAutoreleasePool.cpp ..\base\ccCArray.cpp ..\base\CCConfiguration.cpp ..\base\CCConsole.cpp ..\base\CCData.cpp ..\base\CCDataVisitor.cpp ..\base\CCDirector.cpp ..\base\CCEvent.cpp ..\base\CCEventAcceleration.cpp ..\base\CCEventCustom.cpp ..\base\CCEventDispatcher.cpp ..\base\CCEventFocus.cpp ..\base\CCEventKeyboard.cpp ..\base\CCEventListener.cpp ..\base\CCEventListenerAcceleration.cpp ..\base\CCEventListenerCustom.cpp ..\base\CCEventListenerFocus.cpp ..\base\CCEventListenerKeyboard.cpp ..\base\CCEventListenerMouse.cpp ..\base\CCEventListenerTouch.cpp ..\base\CCEventMouse.cpp ..\base\CCEventTouch.cpp ..\base\ccFPSImages.c ..\base\CCIMEDispatcher.cpp ..\base\CCNS.cpp ..\base\CCProfiling.cpp ..\base\CCRef.cpp ..\base\CCScheduler.cpp ..\base\CCScriptSupport.cpp ..\base\CCTouch.cpp ..\base\ccTypes.cpp ..\base\CCUserDefault.cpp ..\base\ccUTF8.cpp ..\base\ccUtils.cpp ..\base\CCValue.cpp ..\base\etc1.cpp ..\base\ObjectFactory.cpp ..\base\s3tc.cpp ..\base\TGAlib.cpp ..\base\ZipUtils.cpp ..\cocos2d.cpp ..\deprecated\CCArray.cpp ..\deprecated\CCDeprecated.cpp ..\deprecated\CCDictionary.cpp ..\deprecated\CCNotificationCenter.cpp ..\deprecated\CCSet.cpp ..\deprecated\CCString.cpp ..\math\CCAffineTransform.cpp ..\math\CCGeometry.cpp ..\math\CCVertex.cpp ..\math\Mat4.cpp ..\math\MathUtil.cpp ..\math\Quaternion.cpp ..\math\TransformUtils.cpp ..\math\Vec2.cpp ..\math\Vec3.cpp ..\math\Vec4.cpp ..\physics\CCPhysicsBody.cpp ..\physics\CCPhysicsContact.cpp ..\physics\CCPhysicsJoint.cpp ..\physics\CCPhysicsShape.cpp ..\physics\CCPhysicsWorld.cpp ..\physics\chipmunk\CCPhysicsBodyInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsContactInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsJointInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsShapeInfo_chipmunk.cpp ..\physics\chipmunk\CCPhysicsWorldInfo_chipmunk.cpp ..\platform\CCFileUtils.cpp ..\platform\CCGLViewProtocol.cpp ..\platform\CCImage.cpp ..\platform\CCSAXParser.cpp ..\platform\CCThread.cpp ..\platform\desktop\CCGLView.cpp ..\platform\win32\CCApplication.cpp ..\platform\win32\CCCommon.cpp ..\platform\win32\CCDevice.cpp ..\platform\win32\CCFileUtilsWin32.cpp ..\platform\win32\CCStdC.cpp ..\renderer\CCBatchCommand.cpp ..\renderer\CCCustomCommand.cpp ..\renderer\CCGLProgram.cpp ..\renderer\CCGLProgramCache.cpp ..\renderer\CCGLProgramState.cpp ..\renderer\CCGLProgramStateCache.cpp ..\renderer\ccGLStateCache.cpp ..\renderer\CCGroupCommand.cpp ..\renderer\CCMeshCommand.cpp ..\renderer\CCQuadCommand.cpp ..\renderer\CCRenderCommand.cpp ..\renderer\CCRenderer.cpp ..\renderer\ccShaders.cpp ..\renderer\CCTexture2D.cpp ..\renderer\CCTextureAtlas.cpp ..\renderer\CCTextureCache.cpp CCAction.cpp CCActionCamera.cpp CCActionCatmullRom.cpp CCActionEase.cpp CCActionGrid.cpp CCActionGrid3D.cpp CCActionInstant.cpp CCActionInterval.cpp CCActionManager.cpp CCActionPageTurn3D.cpp CCActionProgressTimer.cpp CCActionTiledGrid.cpp CCActionTween.cpp CCAnimation.cpp CCAnimationCache.cpp CCAtlasNode.cpp CCClippingNode.cpp CCComponent.cpp CCComponentContainer.cpp CCDrawingPrimitives.cpp CCDrawNode.cpp CCFastTMXLayer.cpp CCFastTMXTiledMap.cpp CCFont.cpp CCFontAtlas.cpp CCFontAtlasCache.cpp CCFontCharMap.cpp CCFontFNT.cpp CCFontFreeType.cpp CCGLBufferedNode.cpp CCGrabber.cpp CCGrid.cpp CCLabel.cpp CCLabelAtlas.cpp CCLabelBMFont.cpp CCLabelTextFormatter.cpp CCLabelTTF.cpp CCLayer.cpp CCMenu.cpp CCMenuItem.cpp CCMotionStreak.cpp CCNode.cpp CCNodeGrid.cpp CCParallaxNode.cpp CCParticleBatchNode.cpp CCParticleExamples.cpp CCParticleSystem.cpp CCParticleSystemQuad.cpp CCProgressTimer.cpp CCRenderTexture.cpp CCScene.cpp CCSprite.cpp CCSpriteBatchNode.cpp CCSpriteFrame.cpp CCSpriteFrameCache.cpp CCTextFieldTTF.cpp CCTileMapAtlas.cpp CCTMXLayer.cpp CCTMXObjectGroup.cpp CCTMXTiledMap.cpp CCTMXXMLParser.cpp CCTransition.cpp CCTransitionPageTurn.cpp CCTransitionProgress.cpp CCTweenFunction.cpp
          ConvertUTF.c
          ConvertUTFWrapper.cpp
          edtaa3func.cpp
@@ -15,20 +15,20 @@
          CCBundle3D.cpp
          CCBundleReader.cpp
          CCMesh.cpp
-     1>..\3d\CCBundle3D.cpp(107): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\3d\CCBundle3D.cpp(494): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\3d\CCAnimate3D.cpp(98): warning C4018: “<”: 有符号/无符号不匹配
          CCMeshSkin.cpp
          CCObjLoader.cpp
          CCSprite3D.cpp
+         CCSprite3DMaterial.cpp
      1>..\3d\CCMeshSkin.cpp(301): warning C4018: “<”: 有符号/无符号不匹配
      1>..\3d\CCMeshSkin.cpp(307): warning C4018: “<”: 有符号/无符号不匹配
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\3d\CCObjLoader.cpp)
      1>..\3d\CCMeshSkin.cpp(335): warning C4018: “<”: 有符号/无符号不匹配
      1>..\3d\CCMeshSkin.cpp(338): warning C4018: “<”: 有符号/无符号不匹配
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\3d\CCObjLoader.cpp)
+     1>..\3d\CCBundle3D.cpp(107): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\3d\CCBundle3D.cpp(494): warning C4018: “<”: 有符号/无符号不匹配
      1>..\3d\CCObjLoader.cpp(170): warning C4018: “>”: 有符号/无符号不匹配
-         CCSprite3DMaterial.cpp
          atitc.cpp
+     1>..\3d\CCAnimate3D.cpp(98): warning C4018: “<”: 有符号/无符号不匹配
          base64.cpp
          CCAutoreleasePool.cpp
          ccCArray.cpp
@@ -40,12 +40,12 @@
          CCEvent.cpp
          CCEventAcceleration.cpp
          CCEventCustom.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\CCConsole.cpp)
          CCEventDispatcher.cpp
          CCEventFocus.cpp
          CCEventKeyboard.cpp
          CCEventListener.cpp
          CCEventListenerAcceleration.cpp
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\CCConsole.cpp)
          CCEventListenerCustom.cpp
          CCEventListenerFocus.cpp
          CCEventListenerKeyboard.cpp
@@ -57,44 +57,44 @@
          CCIMEDispatcher.cpp
          CCNS.cpp
          CCProfiling.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\CCNS.cpp)
          CCRef.cpp
          CCScheduler.cpp
          CCScriptSupport.cpp
          CCTouch.cpp
          ccTypes.cpp
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\CCNS.cpp)
          CCUserDefault.cpp
          ccUTF8.cpp
          ccUtils.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\ccUtils.cpp)
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\ccUtils.cpp)
          CCValue.cpp
-     1>..\base\ccUTF8.cpp(234): warning C4996: 'cocos2d::cc_wcslen': 被声明为已否决
-                 e:\runningman\runningman\cocos2d\cocos\base\ccUTF8.h(130) : 参见“cocos2d::cc_wcslen”的声明
-     1>..\base\ccUTF8.cpp(277): warning C4996: 'cocos2d::cc_wcslen': 被声明为已否决
-                 e:\runningman\runningman\cocos2d\cocos\base\ccUTF8.h(130) : 参见“cocos2d::cc_wcslen”的声明
          etc1.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\CCUserDefault.cpp)
          ObjectFactory.cpp
          s3tc.cpp
          TGAlib.cpp
          ZipUtils.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\CCValue.cpp)
          cocos2d.cpp
          CCArray.cpp
          CCDeprecated.cpp
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\CCUserDefault.cpp)
+     1>..\base\ccUTF8.cpp(234): warning C4996: 'cocos2d::cc_wcslen': 被声明为已否决
+                 h:\taocode\runningman_new\runningman\cocos2d\cocos\base\ccUTF8.h(130) : 参见“cocos2d::cc_wcslen”的声明
+     1>..\base\ccUTF8.cpp(277): warning C4996: 'cocos2d::cc_wcslen': 被声明为已否决
+                 h:\taocode\runningman_new\runningman\cocos2d\cocos\base\ccUTF8.h(130) : 参见“cocos2d::cc_wcslen”的声明
          CCDictionary.cpp
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\base\CCValue.cpp)
          CCNotificationCenter.cpp
          CCSet.cpp
          CCString.cpp
-     1>e:\runningman\runningman\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\deprecated\CCDeprecated.cpp)
          CCAffineTransform.cpp
          CCGeometry.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\deprecated\CCString.cpp)
          CCVertex.cpp
          Mat4.cpp
+     1>h:\taocode\runningman_new\runningman\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\deprecated\CCDeprecated.cpp)
          MathUtil.cpp
          Quaternion.cpp
          TransformUtils.cpp
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\deprecated\CCString.cpp)
          Vec2.cpp
          Vec3.cpp
          Vec4.cpp
@@ -112,46 +112,46 @@
          CCGLViewProtocol.cpp
          CCImage.cpp
          CCSAXParser.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\platform\CCFileUtils.cpp)
-     1>..\platform\CCFileUtils.cpp(546): warning C4018: “<”: 有符号/无符号不匹配
          CCThread.cpp
          CCGLView.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\platform\CCImage.cpp)
          CCApplication.cpp
          CCCommon.cpp
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\platform\CCFileUtils.cpp)
+     1>..\platform\CCFileUtils.cpp(546): warning C4018: “<”: 有符号/无符号不匹配
          CCDevice.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\platform\desktop\CCGLView.cpp)
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\platform\CCImage.cpp)
          CCFileUtilsWin32.cpp
          CCStdC.cpp
          CCBatchCommand.cpp
          CCCustomCommand.cpp
          CCGLProgram.cpp
-     1>e:\runningman\runningman\cocos2d\cocos\platform\win32\CCFileUtilsWin32.h(102): warning C4996: 'cocos2d::FileUtils::getFileData': 被声明为已否决 (..\platform\win32\CCFileUtilsWin32.cpp)
-                 E:\Runningman\RunningMan\cocos2d\cocos\platform/CCFileUtils.h(101) : 参见“cocos2d::FileUtils::getFileData”的声明
          CCGLProgramCache.cpp
          CCGLProgramState.cpp
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\platform\desktop\CCGLView.cpp)
          CCGLProgramStateCache.cpp
+     1>h:\taocode\runningman_new\runningman\cocos2d\cocos\platform\win32\CCFileUtilsWin32.h(102): warning C4996: 'cocos2d::FileUtils::getFileData': 被声明为已否决 (..\platform\win32\CCFileUtilsWin32.cpp)
+                 H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\platform/CCFileUtils.h(101) : 参见“cocos2d::FileUtils::getFileData”的声明
          ccGLStateCache.cpp
          CCGroupCommand.cpp
          CCMeshCommand.cpp
          CCQuadCommand.cpp
-     1>..\renderer\ccGLStateCache.cpp(225): warning C4800: “uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
-     1>..\renderer\ccGLStateCache.cpp(226): warning C4800: “uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
          CCRenderCommand.cpp
          CCRenderer.cpp
          ccShaders.cpp
          CCTexture2D.cpp
          CCTextureAtlas.cpp
+     1>..\renderer\ccGLStateCache.cpp(225): warning C4800: “uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\renderer\ccGLStateCache.cpp(226): warning C4800: “uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
          CCTextureCache.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\renderer\CCTexture2D.cpp)
          CCAction.cpp
          CCActionCamera.cpp
          CCActionCatmullRom.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\renderer\CCTextureCache.cpp)
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\renderer\CCTexture2D.cpp)
          CCActionEase.cpp
          CCActionGrid.cpp
          CCActionGrid3D.cpp
          CCActionInstant.cpp
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\renderer\CCTextureCache.cpp)
          CCActionInterval.cpp
          CCActionManager.cpp
          CCActionPageTurn3D.cpp
@@ -180,10 +180,15 @@
          CCLabel.cpp
          CCLabelAtlas.cpp
          CCLabelBMFont.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (CCGrid.cpp)
          CCLabelTextFormatter.cpp
-     1>E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\functional(1152): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告) (CCLabel.cpp)
-                 E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\functional(1152): 编译类 模板 成员函数“void std::_Bind<_Forced,_Ret,_Fun,_V0_t,_V1_t,_V2_t,_V3_t,_V4_t,_V5_t,_V6_t,_V7_t,_V8_t,_V9_t,_V10_t,<unnamed-symbol>>::operator ()(void)”时
+         CCLabelTTF.cpp
+         CCLayer.cpp
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (CCGrid.cpp)
+         CCMenu.cpp
+         CCMenuItem.cpp
+         CCMotionStreak.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\functional(1152): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告) (CCLabel.cpp)
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\functional(1152): 编译类 模板 成员函数“void std::_Bind<_Forced,_Ret,_Fun,_V0_t,_V1_t,_V2_t,_V3_t,_V4_t,_V5_t,_V6_t,_V7_t,_V8_t,_V9_t,_V10_t,<unnamed-symbol>>::operator ()(void)”时
                  with
                  [
                      _Forced=true,
@@ -202,7 +207,7 @@
                      _V10_t=std::_Nil,
                      <unnamed-symbol>=std::_Nil
                  ]
-                 E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xrefwrap(431): 参见对正在编译的函数 模板 实例化“void std::_Bind<_Forced,_Ret,_Fun,_V0_t,_V1_t,_V2_t,_V3_t,_V4_t,_V5_t,_V6_t,_V7_t,_V8_t,_V9_t,_V10_t,<unnamed-symbol>>::operator ()(void)”的引用
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\xrefwrap(431): 参见对正在编译的函数 模板 实例化“void std::_Bind<_Forced,_Ret,_Fun,_V0_t,_V1_t,_V2_t,_V3_t,_V4_t,_V5_t,_V6_t,_V7_t,_V8_t,_V9_t,_V10_t,<unnamed-symbol>>::operator ()(void)”的引用
                  with
                  [
                      _Forced=true,
@@ -240,11 +245,6 @@
                      _V10_t=std::_Nil,
                      <unnamed-symbol>=std::_Nil
                  ]
-         CCLabelTTF.cpp
-         CCLayer.cpp
-         CCMenu.cpp
-         CCMenuItem.cpp
-         CCMotionStreak.cpp
          CCNode.cpp
          CCNodeGrid.cpp
          CCParallaxNode.cpp
@@ -257,7 +257,7 @@
          CCScene.cpp
          CCSprite.cpp
          CCSpriteBatchNode.cpp
-     1>E:\Runningman\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (CCRenderTexture.cpp)
+     1>H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (CCRenderTexture.cpp)
          CCSpriteFrame.cpp
          CCSpriteFrameCache.cpp
          CCTextFieldTTF.cpp
@@ -271,18 +271,18 @@
          CCTransitionProgress.cpp
          CCTweenFunction.cpp
        PreLinkEvent:
-         if not exist "E:\Runningman\RunningMan\proj.win32\Debug.win32\" mkdir "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\freetype2\prebuilt\win32\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\glfw3\prebuilt\win32\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\curl\prebuilt\win32\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\jpeg\prebuilt\win32\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\png\prebuilt\win32\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\tiff\prebuilt\win32\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\webp\prebuilt\win32\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\websockets\prebuilt\win32\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\zlib\prebuilt\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\icon\prebuilt\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
-         xcopy /Y /Q "E:\Runningman\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\gles\prebuilt\*.*" "E:\Runningman\RunningMan\proj.win32\Debug.win32\"
+         if not exist "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\" mkdir "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\freetype2\prebuilt\win32\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\glfw3\prebuilt\win32\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\curl\prebuilt\win32\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\jpeg\prebuilt\win32\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\png\prebuilt\win32\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\tiff\prebuilt\win32\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\webp\prebuilt\win32\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\websockets\prebuilt\win32\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\zlib\prebuilt\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\icon\prebuilt\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
+         xcopy /Y /Q "H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\..\..\external\win32-specific\gles\prebuilt\*.*" "H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\"
          
          :VCEnd
          复制了 1 个文件
@@ -297,7 +297,7 @@
          复制了 2 个文件
          复制了 2 个文件
        Lib:
-         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\Runningman\RunningMan\proj.win32\Debug.win32\libcocos2d.lib" /NOLOGO Debug.win32\ConvertUTF.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\libcocos2d.lib" /NOLOGO Debug.win32\ConvertUTF.obj
          Debug.win32\ConvertUTFWrapper.obj
          Debug.win32\edtaa3func.obj
          Debug.win32\tinyxml2.obj
@@ -474,9 +474,9 @@
          Debug.win32\CCTransitionPageTurn.obj
          Debug.win32\CCTransitionProgress.obj
          Debug.win32\CCTweenFunction.obj
-         cocos2d.vcxproj -> E:\Runningman\RunningMan\proj.win32\Debug.win32\libcocos2d.lib
-     1>已完成生成项目“E:\Runningman\RunningMan\cocos2d\cocos\2d\cocos2d.vcxproj”(Build 个目标)的操作。
+         cocos2d.vcxproj -> H:\TaoCode\RunningMan_New\RunningMan\proj.win32\Debug.win32\libcocos2d.lib
+     1>已完成生成项目“H:\TaoCode\RunningMan_New\RunningMan\cocos2d\cocos\2d\cocos2d.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:02:28.16
+已用时间 00:01:20.44

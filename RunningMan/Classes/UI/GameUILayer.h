@@ -3,6 +3,9 @@
 
 #include "cocos2d.h"
 
+class Player;
+class GameScene;
+
 class GameUILayer : public cocos2d::Layer
 {
 public:
@@ -16,19 +19,24 @@ public:
 
 	void update(float dt);
 
-	void callback_OnPressReplay();
-	void callback_OnPressGoOn();
+	void callback_OnPressReplay(Ref* sender);
+	void callback_OnPressGoOn(Ref* sender);
 
 	void PlayLabelFrame();
 	void callback_EndPlayedLabelFrame();
 
-	void callback_ProgressFinish_A();
-	void callback_ProgressFinish_B();
+	void callback_ProgressFinish_A(Ref* sender);
+	void callback_ProgressFinish_B(Ref* sender);
 
-	void callback_OnPressJumpA();
-	void callback_OnPressActionA();
-	void callback_OnPressJumpB();
-	void callback_OnPressActionB();
+	void callback_OnPressJumpA(Ref* sender);
+	void callback_OnPressActionA(Ref* sender);
+	void callback_OnPressJumpB(Ref* sender);
+	void callback_OnPressActionB(Ref* sender);
+
+	void SetPlayerA(Player* pPlayer);
+	Player* GetPlayerA();
+	void SetPlayerB(Player* pPlayer);
+	Player* GetPlayerB();
 
 	void restart();
 
@@ -39,6 +47,20 @@ public:
 	CREATE_FUNC(GameUILayer);
 
 	static int LayerTag;
+
+private:
+	void initPlayerAUI();
+	void initPlayerBUI();
+
+	void StopProgress_A();
+	void StopProgress_B();
+	Player* m_PlayerA;
+	Player* m_PlayerB;
+
+	int m_numPlayer;
+	static const int PowerNumIconsMax;
+
+	GameScene* m_pGameScene;
 public:
 	static const float DefaultLevelTime;
 

@@ -7,6 +7,7 @@
 class Player;
 class Track;
 class AI_Player;
+class GameLevel;
 
 enum RunGameMode
 {
@@ -54,6 +55,8 @@ public:
 	{
 		m_SceneIndex = index;
 	}
+
+	GameLevel* GetCurrentLevelData();
 
 	//----------------------------------------------------------------
     
