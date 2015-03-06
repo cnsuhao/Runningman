@@ -6,7 +6,7 @@
 class ParticleEffect : public cocos2d::ParticleSystemQuad
 {
 public:
-	ParticleEffect(float AliveTime, std::string particleFile);
+	ParticleEffect(float AliveTime, const std::string& particleFile);
 	~ParticleEffect(void);
 
 	void update(float dt);

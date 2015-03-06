@@ -20,6 +20,7 @@ public:
 
 	void removeCoffin();
 
+	void useSkill();
 private:
 	int CoffinHP;
 };

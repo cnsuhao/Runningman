@@ -28,7 +28,7 @@ void TrapStorm::setRotateByPoint(cocos2d::Vec2 playerpos, cocos2d::Vec2 anchopos
 {
 	this->setPosition(playerpos);
 
-	anchopos.y += 0.4f;
+	anchopos.y += 65;
 
 	if (width > 0.0f && height > 0.0f)
 	{

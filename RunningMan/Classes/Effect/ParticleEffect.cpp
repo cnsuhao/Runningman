@@ -1,7 +1,7 @@
 #include "ParticleEffect.h"
 
 
-ParticleEffect::ParticleEffect(float AliveTime, std::string particleFile) :
+ParticleEffect::ParticleEffect(float AliveTime, const std::string& particleFile) :
 	cocos2d::ParticleSystemQuad()
 {
 	this->setPositionType(cocos2d::ParticleSystem::PositionType::GROUPED);
@@ -16,7 +16,7 @@ ParticleEffect::ParticleEffect(float AliveTime, std::string particleFile) :
 	}
 	else
 	{
-		std::string filename = particleFile;
+		const std::string& filename = particleFile;
 		this->initWithFile(filename);
 		this->stopSystem();
 	}

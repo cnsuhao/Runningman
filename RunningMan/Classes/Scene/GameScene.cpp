@@ -38,11 +38,25 @@ Scene* GameScene::createScene(int useSceneID)
 	auto uilayer = GameUILayer::create();
 
     // add layer as a child to scene
-    scene->addChild(layer,1);
-	scene->addChild(uilayer,2);
+    scene->addChild(layer,1,GameScene::LayerTag);
+	scene->addChild(uilayer,2,GameUILayer::LayerTag);
 
     // return the scene
     return scene;
+}
+
+
+cocos2d::Node* GameScene::GetNode()
+{
+	auto scene = cocos2d::Director::sharedDirector()->getRunningScene();
+	if (scene != nullptr)
+	{
+		auto gs = (scene->getChildByTag(GameScene::LayerTag));
+		return gs;
+	}
+	//
+	return nullptr;
+
 }
 
 // on "init" you need to initialize your instance
@@ -69,6 +83,8 @@ GameScene::GameScene()
 	m_NumProjectiles = 50;
 
 	cradius = 170.0f;
+	//
+	
 }
 
 void GameScene::SceneInit()
