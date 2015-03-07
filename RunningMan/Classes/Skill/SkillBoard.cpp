@@ -15,18 +15,9 @@ SkillBoard::SkillBoard(Player* pPlayer) :
 
 void SkillBoard::useSkill()
 {
-	//if (CircleRunScene.m_Track != null && m_pPlayer != null)
-	//{
-	//	CircleRunScene.m_Track.CreateTrap(m_pPlayer.rotation, (uint)TrapType.TRAP_BOARD);
-	//}
-	cocos2d::Scene* pRunningScene = cocos2d::Director::getInstance()->getRunningScene();
-	if (pRunningScene != nullptr)
+	GameScene* gs = (GameScene*)(GameScene::GetNode());
+	if (gs != nullptr && gs->m_Track != nullptr && m_pPlayer != nullptr)
 	{
-		cocos2d::Node* pLayer = pRunningScene->getChildByTag(GameScene::LayerTag);
-		GameScene* pGameLayer = (GameScene*)pLayer;
-		if (pGameLayer != nullptr)
-		{
-			pGameLayer->m_Track->CreateTrap(m_pPlayer->getRotation(), TrapType::TRAP_BOARD);
-		}
+		gs->m_Track->CreateTrap(m_pPlayer->getRotation(),TrapType::TRAP_BANANA);
 	}
 }

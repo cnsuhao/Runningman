@@ -1,5 +1,12 @@
 #include "SkillManager.h"
 
+#include "Skill/SkillBanana.h"
+#include "Skill/SkillBase.h"
+#include "Skill/SkillBoard.h"
+#include "Skill/SkillAnger.h"
+
+
+
 SkillManager* SkillManager::m_Instance = nullptr;
 
 SkillManager* SkillManager::Instance()
@@ -28,10 +35,13 @@ SkillBase* SkillManager::CreateSkill(SkillType type, Player* pPlayer)
 	switch (type)
 	{
 	case SKILL_BANANA:
+		pSkill = new SkillBanana(pPlayer);
 		break;
 	case SKILL_BOARD:
+		pSkill = new SkillBoard(pPlayer);
 		break;
 	case SKILL_ANGER:
+		pSkill = new SkillAnger(pPlayer);
 		break;
 	case SKILL_SPEEDMAX:
 		break;

@@ -25,8 +25,8 @@ public:
 	void PlayLabelFrame();
 	void callback_EndPlayedLabelFrame();
 
-	void callback_ProgressFinish_A(Ref* sender);
-	void callback_ProgressFinish_B(Ref* sender);
+	void callback_ProgressFinish_A();
+	void callback_ProgressFinish_B();
 
 	void callback_OnPressJumpA(Ref* sender);
 	void callback_OnPressActionA(Ref* sender);

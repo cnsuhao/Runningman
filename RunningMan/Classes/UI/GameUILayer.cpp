@@ -547,12 +547,22 @@ void GameUILayer::setPlayerB_Power(int power)
 
 void GameUILayer::OnProgressA(float duringTime)
 {
-	;
+	ProgressMaskA->stopAllActions();
+	ProgressMaskA->setPercentage(0);
+	cocos2d::CCProgressTo* to1 = cocos2d::CCProgressTo::create(duringTime, 100);
+	ProgressMaskA->setType(cocos2d::ProgressTimer::Type::BAR);
+	cocos2d::CallFuncN* act1 = cocos2d::CallFuncN::create(CC_CALLBACK_0(GameUILayer::callback_ProgressFinish_A,this));
+	ProgressMaskA->runAction(cocos2d::Sequence::create(to1, act1));
 }
 
 void GameUILayer::OnProgressB(float duringTime)
 {
-	;
+	ProgressMaskB->stopAllActions();
+	ProgressMaskB->setPercentage(0);
+	cocos2d::CCProgressTo* to1 = cocos2d::CCProgressTo::create(duringTime, 100);
+	ProgressMaskB->setType(cocos2d::ProgressTimer::Type::BAR);
+	cocos2d::CallFuncN* act1 = cocos2d::CallFuncN::create(CC_CALLBACK_0(GameUILayer::callback_ProgressFinish_B,this));
+	ProgressMaskB->runAction(cocos2d::Sequence::create(to1, act1));
 }
 
 void GameUILayer::callback_OnPressReplay(Ref* sender)
@@ -685,7 +695,7 @@ void GameUILayer::callback_EndPlayedLabelFrame()
 	}
 }
 
-void GameUILayer::callback_ProgressFinish_A(Ref* sender)
+void GameUILayer::callback_ProgressFinish_A()
 {
 	if(m_PlayerA != nullptr && m_PlayerA->GetPower() < PowerNumIconsMax)
 	{
@@ -701,7 +711,7 @@ void GameUILayer::callback_ProgressFinish_A(Ref* sender)
 	}
 }
 
-void GameUILayer::callback_ProgressFinish_B(Ref* sender)
+void GameUILayer::callback_ProgressFinish_B()
 {
 	if (m_PlayerB != nullptr && m_PlayerB->GetPower() < PowerNumIconsMax)
 	{

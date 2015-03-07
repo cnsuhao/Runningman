@@ -7,9 +7,10 @@ Player_Protagonist::Player_Protagonist(int id) :
 {
 	m_RoleType = "Role_Protagonist";
 	//Skill
-	m_PlayerSkill_Run = SkillManager::Instance()->CreateSkill(SkillType::SKILL_WAND, this);
 
-	m_PlayerSkill_Jump = SkillManager::Instance()->CreateSkill(SkillType::SKILL_FLY, this);
+	m_PlayerSkill_Run = SkillManager::Instance()->CreateSkill(SkillType::SKILL_BOARD, this);
+
+	m_PlayerSkill_Jump = SkillManager::Instance()->CreateSkill(SkillType::SKILL_BANANA, this);
 
 	m_PlayerSkill_Fall = SkillManager::Instance()->CreateSkill(SkillType::SKILL_POWERUPTURBO, this);
 
