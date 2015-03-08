@@ -49,9 +49,6 @@ public:
 	static int LayerTag;
 
 private:
-	void initPlayerAUI();
-	void initPlayerBUI();
-
 	void StopProgress_A();
 	void StopProgress_B();
 	Player* m_PlayerA;
@@ -59,6 +56,9 @@ private:
 
 	int m_numPlayer;
 	static const int PowerNumIconsMax;
+
+	static const int processATag;
+	static const int processBTag;
 
 	GameScene* m_pGameScene;
 public:

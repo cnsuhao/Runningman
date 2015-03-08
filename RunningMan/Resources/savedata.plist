@@ -18,13 +18,13 @@
             <key>MaxShowLevel</key>
             <integer>1</integer>
             <key>FinishedEgyptStory</key>
-            <false/>
+            <true/>
             <key>RatedMe</key>
-            <false/>
+            <true/>
             <key>Payment</key>
             <true/>
             <key>UnlockRoleList</key>
-            <string>0,1</string>
+            <string>0,1,0,1</string>
         </dict>
     </dict>
 </plist>

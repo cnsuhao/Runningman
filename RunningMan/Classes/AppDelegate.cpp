@@ -5,8 +5,8 @@
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
-	preferredWidth = ResDef::ScreenWidth;
-	preferredHeight = ResDef::ScreenHeight;
+	preferredWidth = ResDef::getInstance()->ScreenWidth;
+	preferredHeight = ResDef::getInstance()->ScreenHeight;
 }
 
 AppDelegate::~AppDelegate() 
@@ -25,7 +25,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // turn on display FPS
     director->setDisplayStats(true);
 
-	Director::getInstance()->getOpenGLView()->setDesignResolutionSize(preferredWidth, preferredHeight, ResolutionPolicy::NO_BORDER);
+	Director::getInstance()->getOpenGLView()->setFrameSize(800	,480);
+	Director::getInstance()->getOpenGLView()->setDesignResolutionSize(preferredWidth, preferredHeight, ResolutionPolicy::SHOW_ALL);
+	
+	
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);

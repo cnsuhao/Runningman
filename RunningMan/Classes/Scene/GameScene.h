@@ -51,6 +51,8 @@ public:
 
 	int GetPlayerNum();
 
+	int GetSceneIndex();
+
 	void setSceneID(int index)
 	{
 		m_SceneIndex = index;
@@ -114,9 +116,7 @@ protected:
 
 	void createAllCoinEdge();
 
-	void createAllCoin();
-
-    int GetSceneIndex();
+	void createAllCoin();    
 
 	void ShowLabelAnimation();
 };

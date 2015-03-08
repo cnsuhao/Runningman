@@ -93,8 +93,14 @@ public:
 	static const std::string g_ParticleEffectLavaFlow;
 
 	//-----------------------------------------------------------
-	static int ScreenWidth;
-	static int ScreenHeight;
+	int ScreenWidth;
+	int ScreenHeight;
+
+	int BaseGameWidth;
+	int BaseGameHeight;
+
+	float ScreenWidthRatio;
+	float ScreenHeightRatio;
 	//-----------------------------------------------------------
 	ConfigFileStruct ConfigSetting;
 private:

@@ -614,17 +614,21 @@ void Player::playLoseGameAnimation()
 	//animaction->setDuration(0.25f);
 
 	RepeatForever* pRepeat = RepeatForever::create(animaction);
+
+	this->runAction(pRepeat);
 }
 
 void Player::playWinGameAnimation()
 {
 	std::string name = ActionsName[(int)ManAnimType::MAN_WIN];
 	cocos2d::Vector<cocos2d::SpriteFrame*> temp = m_framesDict.at(name);
-	Animation* ani = Animation::createWithSpriteFrames(temp,0.2f);
+	Animation* ani = Animation::createWithSpriteFrames(temp,0.1f);
 	Animate* animaction = Animate::create(ani);
 	//animaction->setDuration(1.0f);
 
 	RepeatForever* pRepeat = RepeatForever::create(animaction);
+
+	this->runAction(pRepeat);
 }
 
 void Player::playFallAnimation()

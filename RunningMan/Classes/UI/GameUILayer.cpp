@@ -3,6 +3,7 @@
 #include "Scene/GameScene.h"
 #include "Level/GameLevel.h"
 #include "Scene/Track.h"
+#include "Scene/WorldMapScene.h"
 
 #include "Level/LevelManager.h"
 #include "Sound/SoundManager.h"
@@ -13,6 +14,9 @@ int GameUILayer::LayerTag = 8;
 const float GameUILayer::DefaultLevelTime = 300.00f;
 
 const int GameUILayer::PowerNumIconsMax = 4;
+
+const int GameUILayer::processATag = 301;
+const int GameUILayer::processBTag = 302;
 
 bool GameUILayer::init()
 {
@@ -334,14 +338,16 @@ void GameUILayer::onEnter()
 			if (m_PlayerA != nullptr && m_PlayerB != nullptr)
 			{
 				setPlayerA_Power(m_PlayerA->GetPower());
-				if (ProgressMaskA->isRunning() == false &&
+				cocos2d::Action* pActiveActA = ProgressMaskA->getActionByTag(processATag);
+				if (pActiveActA == nullptr &&
 					m_PlayerA->GetPower()!= m_PlayerA->m_MaxPower)
 				{
 					OnProgressA(m_PlayerA->m_PowerUpTime);
 				}
 				//
 				setPlayerB_Power(m_PlayerB->GetPower());
-				if (ProgressMaskB->isRunning() == false &&
+				cocos2d::Action* pActiveActB = ProgressMaskB->getActionByTag(processBTag);
+				if (pActiveActB == nullptr &&
 					m_PlayerB->GetPower() != m_PlayerB->m_MaxPower)
 				{
 					OnProgressB(m_PlayerB->m_PowerUpTime);
@@ -494,75 +500,63 @@ void GameUILayer::onExit()
 	Layer::onExit();
 }
 
-void GameUILayer::initPlayerAUI()
-{
-	
-}
-
-void GameUILayer::initPlayerBUI()
-{
-	jump_text = cocos2d::Sprite::createWithSpriteFrameName("jump_text.png");
-	action_text = cocos2d::Sprite::createWithSpriteFrameName("action_text.png");
-
-	cocos2d::Sprite* spCtrl_N = cocos2d::Sprite::createWithSpriteFrameName("ctrl_btn_normal.png");
-	cocos2d::Sprite* spCtrl_S = cocos2d::Sprite::createWithSpriteFrameName("ctrl_btn_hover.png");
-	cocos2d::Sprite* spCtrl_N_2 = cocos2d::Sprite::createWithSpriteFrameName("ctrl_btn_normal.png");
-	cocos2d::Sprite* spCtrl_S_2 = cocos2d::Sprite::createWithSpriteFrameName("ctrl_btn_hover.png");
-
-	jumpBtn = cocos2d::MenuItemSprite::create(
-		spCtrl_N, 
-		spCtrl_S, 
-		nullptr, 
-		CC_CALLBACK_1(GameUILayer::callback_OnPressJumpB, this));
-
-	actionBtn = cocos2d::MenuItemSprite::create(
-		spCtrl_N_2, 
-		spCtrl_S_2, 
-		nullptr, 
-		CC_CALLBACK_1(GameUILayer::callback_OnPressActionB, this));
-
-	jump_text->setPosition( cocos2d::Vec2(726, winSize.height - 405) );
-	jump_text->setPosition( cocos2d::Vec2(78, winSize.height - 405) );
-
-	jump_menu = cocos2d::Menu::createWithItem(jumpBtn);
-	jump_text->setPosition( cocos2d::Vec2(726, winSize.height - 405) );
-	addChild(jump_menu, 1);
-	action_menu = cocos2d::Menu::createWithItem(actionBtn);
-	jump_text->setPosition( cocos2d::Vec2(78, winSize.height - 405) );
-	addChild(action_menu, 1);
-
-	addChild(jump_text, 5);
-	addChild(action_text, 5);
-}
-
 void GameUILayer::setPlayerA_Power(int power)
 {
-	
+	cocos2d::Vector<cocos2d::Sprite*>::iterator it = PowerNumIconsA.begin();
+	for( ; it<PowerNumIconsA.end(); ++it)
+	{
+		(*it)->setVisible(false);
+	}
+	PowerNumIconsA.at(power)->setVisible(true);
+	//
 }
 
 void GameUILayer::setPlayerB_Power(int power)
 {
-	;
+	cocos2d::Vector<cocos2d::Sprite*>::iterator it = PowerNumIconsB.begin();
+	for( ; it<PowerNumIconsB.end(); ++it)
+	{
+		(*it)->setVisible(false);
+	}
+	PowerNumIconsB.at(power)->setVisible(true);
 }
 
 void GameUILayer::OnProgressA(float duringTime)
 {
 	ProgressMaskA->stopAllActions();
 	ProgressMaskA->setPercentage(0);
-	cocos2d::CCProgressTo* to1 = cocos2d::CCProgressTo::create(duringTime, 100);
-	ProgressMaskA->setType(cocos2d::ProgressTimer::Type::BAR);
+	//cocos2d::CCProgressTo* to1 = cocos2d::CCProgressTo::create(duringTime, 100);
+
+	cocos2d::Vector<cocos2d::FiniteTimeAction*> pAcs;
+
+	auto to1 = cocos2d::ProgressTo::create(duringTime, 100);
+	pAcs.pushBack(to1);
+
+	ProgressMaskA->setType(cocos2d::ProgressTimer::Type::RADIAL);
 	cocos2d::CallFuncN* act1 = cocos2d::CallFuncN::create(CC_CALLBACK_0(GameUILayer::callback_ProgressFinish_A,this));
-	ProgressMaskA->runAction(cocos2d::Sequence::create(to1, act1));
+	pAcs.pushBack(act1);
+
+	cocos2d::Action* pActiveActA = ProgressMaskA->runAction(cocos2d::Sequence::create(pAcs));
+	pActiveActA->setTag(processATag);
 }
 
 void GameUILayer::OnProgressB(float duringTime)
 {
 	ProgressMaskB->stopAllActions();
 	ProgressMaskB->setPercentage(0);
-	cocos2d::CCProgressTo* to1 = cocos2d::CCProgressTo::create(duringTime, 100);
-	ProgressMaskB->setType(cocos2d::ProgressTimer::Type::BAR);
+	//cocos2d::CCProgressTo* to1 = cocos2d::CCProgressTo::create(duringTime, 100);
+
+	cocos2d::Vector<cocos2d::FiniteTimeAction*> pAcs;
+
+	auto to1 = cocos2d::ProgressTo::create(duringTime, 100);
+	pAcs.pushBack(to1);
+
+	ProgressMaskB->setType(cocos2d::ProgressTimer::Type::RADIAL);
 	cocos2d::CallFuncN* act1 = cocos2d::CallFuncN::create(CC_CALLBACK_0(GameUILayer::callback_ProgressFinish_B,this));
-	ProgressMaskB->runAction(cocos2d::Sequence::create(to1, act1));
+	pAcs.pushBack(act1);
+
+	cocos2d::Action* pActiveActB = ProgressMaskB->runAction(cocos2d::Sequence::create(pAcs));
+	pActiveActB->setTag(processBTag);
 }
 
 void GameUILayer::callback_OnPressReplay(Ref* sender)
@@ -663,7 +657,91 @@ void GameUILayer::callback_OnPressReplay(Ref* sender)
 
 void GameUILayer::callback_OnPressGoOn(Ref* sender)
 {
-	;
+	replayBtn->setVisible(false);
+	replayBtn->setEnabled(false);
+	gotoSceneMapBtn->setVisible(false);
+	gotoSceneMapBtn->setEnabled(false);
+	//
+	GameOver_label->setScale(0.01f);
+	GameOver_label->setVisible(false);
+	IsShowEndLabel = false;
+	m_pGameScene->ShowLabel = false;
+	//
+	StopProgress_A();
+	StopProgress_B();
+	int playerpower = 0;
+	if (GameScene::g_GameMode == RunGameMode::MODE_PVC ||
+		GameScene::g_GameMode == RunGameMode::MODE_PVP)
+	{
+		GameLevel* ldata = LevelManager::Instance()->VsAreaData->m_GameLevels[0];
+		if (ldata != nullptr)
+		{
+			ldata->MatchRestart();
+
+			if (ldata->getRule() == LevelRule::RULE_CAREFULLY_TRAP)
+			{
+				playerpower = 3;
+			}
+		}
+	}
+	else if (GameScene::g_GameMode == RunGameMode::MODE_STORY)
+	{
+		int curscene = ResDef::getInstance()->g_ConfigStruct.CurrentArea - 1;
+		int curlevel = ResDef::getInstance()->g_ConfigStruct.CurrentLevel - 1;
+
+		//ResDef.g_ConfigStruct.CurrentLevel++;
+
+		GameLevel* ldata = LevelManager::Instance()->m_Areas[curscene]->m_GameLevels[curlevel];
+		if (ldata != nullptr)
+		{
+			ldata->MatchRestart();
+
+			if (ldata->getRule() == LevelRule::RULE_CAREFULLY_TRAP)
+			{
+				playerpower = 3;
+			}
+		}
+	}
+	setPlayerA_Power(playerpower);
+	setPlayerB_Power(playerpower);
+
+	if (GameScene::g_GameMode == RunGameMode::MODE_PVC ||
+		GameScene::g_GameMode == RunGameMode::MODE_PVP)
+	{
+		//SimpleAudioEngine.sharedEngine().playBackgroundMusic(ResDef.g_BackgroundMusic, true);
+		SoundManager::Instance()->Play(ResDef::g_BackgroundMusic);
+	}
+	else
+	{
+		int curscene = ResDef::getInstance()->g_ConfigStruct.CurrentArea - 1;
+		int curlevel = ResDef::getInstance()->g_ConfigStruct.CurrentLevel - 1;
+		GameLevel* ldata = LevelManager::Instance()->m_Areas[curscene]->m_GameLevels[curlevel];
+		if (ldata != nullptr)
+		{
+			if (ldata->isBoss())
+			{
+				//SimpleAudioEngine.sharedEngine().playBackgroundMusic(ResDef.g_BossFightMusic, true);
+				SoundManager::Instance()->Play(ResDef::g_BossFightMusic);
+			}
+			else
+			{
+				//SimpleAudioEngine.sharedEngine().playBackgroundMusic(ResDef.g_BackgroundMusic, true);
+				SoundManager::Instance()->Play(ResDef::g_BackgroundMusic);
+			}
+		}
+	}
+
+	int SceneIndex = 0;
+	if (m_pGameScene->GetSceneIndex() < ResDef::getInstance()->g_ConfigStruct.CurrentArea)
+	{
+		SceneIndex = m_pGameScene->GetSceneIndex();
+	}
+	else
+	{
+		SceneIndex = ResDef::getInstance()->g_ConfigStruct.CurrentArea;
+	}
+
+	cocos2d::Director::getInstance()->replaceScene(WorldMapScene::createScene());   
 }
 
 void GameUILayer::PlayLabelFrame()

@@ -203,11 +203,17 @@ const string ResDef::g_ParticleEffect = "Images/SpookyPeasPlist";
 const string ResDef::g_ParticleEffectExplode = "Images/ExplodingRing";
 const string ResDef::g_ParticleEffectLavaFlow = "Images/LavaFlow";
 
-int ResDef::ScreenWidth = 800;
-int ResDef::ScreenHeight = 480;
 
 ResDef::ResDef(void)
 {
+	ScreenWidth = 800;
+	ScreenHeight = 480;
+
+	BaseGameWidth = 800;
+	BaseGameHeight = 480;
+
+	ScreenWidthRatio = (float)ScreenWidth/(float)BaseGameWidth;
+	ScreenHeightRatio = (float)ScreenHeight/(float)BaseGameHeight;
 }
 
 
