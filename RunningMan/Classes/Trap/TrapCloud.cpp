@@ -10,7 +10,7 @@ TrapCloud::TrapCloud(void)
 
 	//----------------------------------
 	m_SafeFrameBase = "cloud";
-	m_TotalDangerFrames = 3;
+	m_TotalSafeFrames = 3;
 	//----------------------------------
 	m_DangerFrameBase = "cloud";
 	m_TotalDangerFrames = 5;
@@ -37,6 +37,7 @@ void TrapCloud::setDangerAndSafeResource()
 	std::string suffixStr = ".png";
 
 	m_DangerAnimFrames.clear();
+	cocos2d::SpriteFrame*pSpriteframe = nullptr;
 
 	for(int i=0; i<m_TotalDangerFrames; ++i)
 	{
@@ -44,7 +45,7 @@ void TrapCloud::setDangerAndSafeResource()
 		ss<<i; 
 		std::string indexStr = ss.str();
 		std::string namestr = m_DangerFrameBase + "_" + indexStr + suffixStr;
-		cocos2d::SpriteFrame*pSpriteframe = cocos2d::SpriteFrameCache::getInstance()->getSpriteFrameByName(namestr);
+		pSpriteframe = cocos2d::SpriteFrameCache::getInstance()->getSpriteFrameByName(namestr);
 		m_DangerAnimFrames.pushBack(pSpriteframe);
 	}
 
@@ -56,9 +57,15 @@ void TrapCloud::setDangerAndSafeResource()
 		ss<<i; 
 		std::string indexStr = ss.str();
 		std::string namestr = m_SafeFrameBase + "_" + indexStr + suffixStr;
-		cocos2d::SpriteFrame*pSpriteframe = cocos2d::SpriteFrameCache::getInstance()->getSpriteFrameByName(namestr);
+		pSpriteframe = cocos2d::SpriteFrameCache::getInstance()->getSpriteFrameByName(namestr);
 		m_SafeAnimFrames.pushBack(pSpriteframe);
 	}
+	//s
+
+	initWithSpriteFrame(pSpriteframe);
+
+	this->width = pSpriteframe->getRect().size.width;
+	this->height = pSpriteframe->getRect().size.height;
 }
 
 void TrapCloud::PlayTrapAnimation()
@@ -70,38 +77,31 @@ void TrapCloud::playSafeAnimation()
 {
 	m_bUsingTrap = false;
 
-	cocos2d::Vector<FiniteTimeAction*> pAcs;
-
 	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_SafeAnimFrames);
+	ani->setLoops(1);
 
-	cocos2d::Animate* animaction = cocos2d::Animate::create(ani);
-	animaction->setDuration(2.0f);
-	pAcs.pushBack(animaction);
+	cocos2d::Animate* animate= cocos2d::Animate::create(ani);
 
 	cocos2d::CallFuncN* pCallFunc = cocos2d::CallFuncN::create(CC_CALLBACK_0(TrapCloud::callbackSafe,this));
-	pAcs.pushBack(pCallFunc);
 
-	Sequence* pSec = Sequence::create(pAcs);
+	Sequence* pSec = Sequence::create(animate,pCallFunc,nullptr);
 
 	this->runAction(pSec);
 }
 
 void TrapCloud::playDangerAnimation()
 {
-	m_bUsingTrap = false;
+	m_bUsingTrap = true;
 
-	cocos2d::Vector<FiniteTimeAction*> pAcs;
 
 	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_DangerAnimFrames);
+	ani->setLoops(1);
 
-	cocos2d::Animate* animaction = cocos2d::Animate::create(ani);
-	animaction->setDuration(2.0f);
-	pAcs.pushBack(animaction);
+	cocos2d::Animate* animate = cocos2d::Animate::create(ani);
 
 	cocos2d::CallFuncN* pCallFunc = cocos2d::CallFuncN::create(CC_CALLBACK_0(TrapCloud::callbackDanger,this));
-	pAcs.pushBack(pCallFunc);
 
-	Sequence* pSec = Sequence::create(pAcs);
+	Sequence* pSec = Sequence::create(animate,pCallFunc,nullptr);
 
 	this->runAction(pSec);
 }
@@ -133,4 +133,9 @@ void TrapCloud::setRotateByPoint(cocos2d::Vec2 playerpos, cocos2d::Vec2 anchopos
 	}
 
 	this->setRotation(rot);
+}
+
+void TrapCloud::SetResource()
+{
+	setDangerAndSafeResource();
 }

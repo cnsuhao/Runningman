@@ -39,7 +39,7 @@ public:
 	float getWidth(){return width;}
 	float getHeight(){return height;}
 
-	void SetResource();
+	virtual void SetResource();
 
 	virtual void PlayTrapAnimation();
 

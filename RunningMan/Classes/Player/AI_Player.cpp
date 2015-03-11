@@ -14,6 +14,8 @@ AI_Player::AI_Player(Player* pPlayerA,Player* pPlayerB, Track* pTrack)
 	body = pPlayerA;
 	enemy = pPlayerB;
 	road = pTrack;
+	//
+	m_AILevel = (int)(CCRANDOM_0_1()*m_AIMaxLevel);
 }
 
 
@@ -25,8 +27,7 @@ void AI_Player::update(float dt)
 {
 	if (Enabled == false) return;
 	//
-	int tempinttype = (int)(body->getUserData());
-	GameRoleType BodyType =  (GameRoleType)tempinttype;
+	GameRoleType BodyType =  GameRoleTypeConvert::String_To_GameRoleType_(body->getRoleType());
 	bool HasCoffin = false;
 	if (BodyType == GameRoleType::GameRoleType_MUMMY)
 	{

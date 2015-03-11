@@ -18,6 +18,8 @@ public:
 
 	void setRotateByPoint(cocos2d::Vec2 playerpos, cocos2d::Vec2 anchopos, float rot, cocos2d::Vec2 rotateBy);
 
+	void SetResource();
+
 private:
 	void playSafeAnimation();
 	void playDangerAnimation();

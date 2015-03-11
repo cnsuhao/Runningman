@@ -13,11 +13,43 @@ enum ItemType;
 
 enum GameRoleType
 {
+	GameRoleType_NULL = -1,
 	GameRoleType_ARSEHOLE = 0,
 	GameRoleType_PHARAOH,
 	GameRoleType_MUMMY,
 	GameRoleType_MATCHMAN,
 };
+
+class GameRoleTypeConvert
+{
+public:
+	GameRoleType static String_To_GameRoleType_(const std::string& name)
+	{
+		if ( name == "Role_Mummy")
+		{
+			return GameRoleType::GameRoleType_MUMMY;
+		}
+
+		if ( name == "Role_Pharaoh")
+		{
+			return GameRoleType::GameRoleType_PHARAOH;
+		}
+
+		if ( name == "Role_MatchMan")
+		{
+			return GameRoleType::GameRoleType_MATCHMAN;
+		}
+
+		if ( name == "Role_Protagonist")
+		{
+			return GameRoleType::GameRoleType_ARSEHOLE;
+		}
+
+		return GameRoleType::GameRoleType_NULL;
+
+	}
+};
+
 
 class Player : public cocos2d::Sprite
 {
