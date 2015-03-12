@@ -77,7 +77,7 @@ void TrapCloud::playSafeAnimation()
 {
 	m_bUsingTrap = false;
 
-	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_SafeAnimFrames);
+	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_SafeAnimFrames,0.2f);
 	ani->setLoops(1);
 
 	cocos2d::Animate* animate= cocos2d::Animate::create(ani);
@@ -94,7 +94,7 @@ void TrapCloud::playDangerAnimation()
 	m_bUsingTrap = true;
 
 
-	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_DangerAnimFrames);
+	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_DangerAnimFrames,0.2f);
 	ani->setLoops(1);
 
 	cocos2d::Animate* animate = cocos2d::Animate::create(ani);

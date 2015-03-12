@@ -87,7 +87,7 @@ void TrapBase::playAnimation()
 {
 	m_bUsingTrap = true;
 
-	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_AnimFrames);
+	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_AnimFrames,0.2f);
 	cocos2d::Animate* animaction = cocos2d::Animate::create(ani);
 	animaction->setDuration(1.0f);
 
