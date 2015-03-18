@@ -12,7 +12,7 @@ Player_Protagonist::Player_Protagonist(int id) :
 
 	m_PlayerSkill_Jump = SkillManager::Instance()->CreateSkill(SkillType::SKILL_BANANA, this);
 
-	m_PlayerSkill_Fall = SkillManager::Instance()->CreateSkill(SkillType::SKILL_POWERUPTURBO, this);
+	m_PlayerSkill_Fall = SkillManager::Instance()->CreateSkill(SkillType::SKILL_ANGER, this);
 
 	m_matchManTextureName = "matchMan";
 

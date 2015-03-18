@@ -212,11 +212,11 @@ void GameScene::InitPlayers()
 	Vec2 playerAAnchoPos = Vec2(ccenter.x, ccenter.y - cradius - 10.0f);
 	Vec2 playerBAnchoPos = Vec2(ccenter.x, ccenter.y - cradius - 10.0f);
 
-	m_PlayerA->setRunAngularVelocity(-1.0f);
-	m_PlayerB->setRunAngularVelocity(-1.0f);
+	m_PlayerA->setRunAngularVelocity(-0.6f);
+	m_PlayerB->setRunAngularVelocity(-0.6f);
 
-	m_PlayerA->setSpeedUpRunAngularVelocity(-1.5f);
-	m_PlayerB->setSpeedUpRunAngularVelocity(-1.5f);
+	m_PlayerA->setSpeedUpRunAngularVelocity(-0.9f);
+	m_PlayerB->setSpeedUpRunAngularVelocity(-0.9f);
 
 	m_PlayerA->setRotateByPoint(ccenter, playerAAnchoPos, 0.0f, ccenter);
 	m_PlayerB->setRotateByPoint(ccenter, playerBAnchoPos, 180.0f, ccenter);

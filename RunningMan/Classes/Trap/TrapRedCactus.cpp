@@ -52,7 +52,7 @@ void TrapRedCactus::PlayTrapAnimation()
 
 	cocos2d::Vector<FiniteTimeAction*> pAcs;
 
-	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_ReadyAnimFrames);
+	cocos2d::Animation* ani = cocos2d::Animation::createWithSpriteFrames(m_ReadyAnimFrames,1.0f);
 
 	cocos2d::Animate* animaction = cocos2d::Animate::create(ani);
 	animaction->setDuration(2.0f);
